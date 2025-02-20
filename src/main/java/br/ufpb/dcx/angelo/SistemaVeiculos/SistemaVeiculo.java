@@ -5,13 +5,13 @@ import java.util.Objects;
 
 public interface SistemaVeiculo {
 
-    public void cadastrarVeiculo (TipoVeiculo tipo, String marca, String modelo, int ano, String codigo, int especifico, boolean especificoTwo) throws VeiculoJaExisteException;
+    public void cadastrarVeiculo (Veiculo veiculo) throws VeiculoJaExisteException;
 
-    public void adicionarVeiculo(List<Veiculo> veiculos, Veiculo novoVeiculo) throws VeiculoJaExisteException;
-
-    public List<Veiculo> PesquisarVeiculos (String marca, String modelo);
+    public List<Veiculo> pesquisarVeiculos (String marca, String modelo);
 
     public void atualizarVeiculo (String codigo, String novoModelo, int novoAno);
+
+    public Veiculo pesquisarVeiculo (String codigo) throws VeiculoInexistenteException;
 
     public int quantidadeDeVeiculosEmEstoque ();
 }

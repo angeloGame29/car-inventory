@@ -1,5 +1,6 @@
 package br.ufpb.dcx.angelo.SistemaVeiculos;
 
+import java.util.Map;
 import java.util.Objects;
 
 public abstract class Veiculo {
@@ -65,4 +66,6 @@ public abstract class Veiculo {
     public int hashCode() {
         return Objects.hash(modelo, codigo);
     }
+
+    public abstract void cadastrar(Map<String, Veiculo> veiculosMap);
 }

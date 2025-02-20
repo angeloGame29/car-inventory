@@ -1,13 +1,15 @@
 package br.ufpb.dcx.angelo.SistemaVeiculos;
 
+import java.util.Map;
+
 public class Moto extends Veiculo {
     private boolean possuiEmbreagem;
-    public Moto(String marca, String modelo, int ano, String codigo, boolean possuiEmbreagem) {
-        super(marca, modelo, ano, codigo);
+    public Moto(TipoVeiculo tipo, String marca, String modelo, int ano, String codigo, boolean possuiEmbreagem) {
+        super(tipo, marca, modelo, ano, codigo);
         this.possuiEmbreagem = possuiEmbreagem;
     }
 
-    public boolean isPossuiEmbreagem() {
+    public boolean getPossuiEmbreagem() {
         return possuiEmbreagem;
     }
 
@@ -35,5 +37,10 @@ public class Moto extends Veiculo {
                 "Ano: " + super.getAno() + "\n" +
                 "Código: " + super.getCodigo() + "\n" +
                 "Possui Embreagem: " + embreagem + "\n";
+    }
+
+    @Override
+    public void cadastrar(Map<String, Veiculo> veiculosMap) {
+        veiculosMap.put(this.getCodigo(), this);
     }
 }

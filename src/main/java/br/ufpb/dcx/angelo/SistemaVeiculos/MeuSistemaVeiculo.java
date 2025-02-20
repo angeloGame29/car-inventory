@@ -12,10 +12,12 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
         this.gravadorVeiculo = new GravadorVeiculo();
     }
 
-    public void recuperaVeiculo() throws IOException, VeiculoJaExisteException{
+    public void recuperaVeiculo() throws IOException {
         Collection<Veiculo> veiculosAchados = this.gravadorVeiculo.recuperaVeiculo();
-        for (Veiculo v: veiculosAchados){
-            this.cadastrarVeiculo(v.getTipo(),v.getMarca(),v.getModelo(), v.getAno(),v.getCodigo(),0,false);
+        for (Veiculo v : veiculosAchados) {
+            if (!this.veiculosMap.containsKey(v.getCodigo())) {
+                v.cadastrar(this.veiculosMap); // Cada veículo sabe como se cadastrar
+            }
         }
     }
 
@@ -25,25 +27,15 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
 
 
     @Override
-    public void cadastrarVeiculo(TipoVeiculo tipo, String marca, String modelo, int ano, String codigoV, int especifico, boolean especificoTwo)throws VeiculoJaExisteException {
-        if(this.veiculosMap.containsKey(codigoV)){
-            throw new VeiculoJaExisteException("Este veiculo: ["+codigoV+"] já existe" );
-        }else{
-            if(tipo.equals(TipoVeiculo.CARRO)){
-                Carro carro = new Carro(marca,modelo,ano,codigoV,especifico,especificoTwo);
-            } else if (tipo.equals(TipoVeiculo.MOTO)) {
-                Moto moto = new Moto(marca,modelo,ano,codigoV,especificoTwo);
-            }
-            }
+    public void cadastrarVeiculo(Veiculo veiculo) throws VeiculoJaExisteException {
+        if (this.veiculosMap.containsKey(veiculo.getCodigo())) {
+            throw new VeiculoJaExisteException("Este veículo [" + veiculo.getCodigo() + "] já existe");
         }
-
-    @Override
-    public void adicionarVeiculo(List<Veiculo> veiculos, Veiculo novoVeiculo) throws VeiculoJaExisteException {
-        //TODO IMPLEMENTAR
+        veiculo.cadastrar(this.veiculosMap);
     }
 
     @Override
-    public List<Veiculo> PesquisarVeiculos(String marca, String modelo) {
+    public List<Veiculo> pesquisarVeiculos(String marca, String modelo) {
         //TODO IMPLEMENTAR
         return List.of();
     }
@@ -51,6 +43,15 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
     @Override
     public void atualizarVeiculo(String codigo, String novoModelo, int novoAno) {
         //TODO IMPLEMENTAR
+    }
+
+    @Override
+    public Veiculo pesquisarVeiculo(String codigo) throws VeiculoInexistenteException {
+        if (this.veiculosMap.containsKey(codigo)) {
+            return this.veiculosMap.get(codigo);
+        }else{
+            throw new VeiculoInexistenteException("Não existe nenhum veiculo com este: ["+codigo+"] codigo");
+        }
     }
 
     @Override
