@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="22" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2tJq5V5jMGZ4ura8l0zOlB6uxHX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MeuSistemaVeiculoTest.executor": "Run",
+    "JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo.executor": "Run",
+    "JUnit.MeuSistemaVeiculoTest.testaGravador.executor": "Run",
+    "Maven.car-inventory [compile].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/João Ângelo/Documents/Meus git",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.ufpb.dcx.angelo.SistemaVeiculos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo">
+    <configuration name="MeuSistemaVeiculoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.dcx.ufpb.angelo.VeiculoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.dcx.ufpb.angelo.VeiculoTest" />
+      <option name="MAIN_CLASS_NAME" value="br.dcx.ufpb.angelo.VeiculoTest.MeuSistemaVeiculoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeuSistemaVeiculoTest.testaCadastroVeiculo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.dcx.ufpb.angelo.VeiculoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.dcx.ufpb.angelo.VeiculoTest" />
+      <option name="MAIN_CLASS_NAME" value="br.dcx.ufpb.angelo.VeiculoTest.MeuSistemaVeiculoTest" />
+      <option name="METHOD_NAME" value="testaCadastroVeiculo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeuSistemaVeiculoTest.testaGravador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.dcx.ufpb.angelo.VeiculoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.dcx.ufpb.angelo.VeiculoTest" />
+      <option name="MAIN_CLASS_NAME" value="br.dcx.ufpb.angelo.VeiculoTest.MeuSistemaVeiculoTest" />
+      <option name="METHOD_NAME" value="testaGravador" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo" />
+        <item itemvalue="JUnit.MeuSistemaVeiculoTest.testaGravador" />
+        <item itemvalue="JUnit.MeuSistemaVeiculoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="" />
+      <created>1740080341309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740080341309</updated>
+    </task>
+    <servers />
+  </component>
+</project>
