@@ -3,16 +3,22 @@ package br.ufpb.dcx.angelo.SistemaVeiculos;
 import java.util.Objects;
 
 public abstract class Veiculo {
+    private TipoVeiculo tipo;
     private String marca;
     private String modelo;
     private int ano;
     private String codigo;
 
-    public Veiculo (String marca, String modelo, int ano, String codigo){
+    public Veiculo (TipoVeiculo tipo, String marca, String modelo, int ano, String codigo){
+        this.tipo = tipo;
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.codigo = codigo;
+    }
+
+    public TipoVeiculo getTipo() {
+        return tipo;
     }
 
     public String getMarca(){

@@ -1,5 +1,7 @@
 package br.ufpb.dcx.angelo.SistemaVeiculos;
 
+import java.util.Objects;
+
 public class Carro extends Veiculo {
     private int portas;
     private boolean automatico;
@@ -22,10 +24,6 @@ public class Carro extends Veiculo {
 
     public void setAutomatico(boolean automatico) {
         this.automatico = automatico;
-    }
-
-    public boolean ligado() {
-        return true;
     }
 
     public String toString() {
