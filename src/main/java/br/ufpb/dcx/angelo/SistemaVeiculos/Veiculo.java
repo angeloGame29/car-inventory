@@ -1,9 +1,11 @@
 package br.ufpb.dcx.angelo.SistemaVeiculos;
 
+import java.io.Serializable;
 import java.util.Map;
 import java.util.Objects;
 
-public abstract class Veiculo {
+public abstract class Veiculo implements Serializable {
+    private static final long serialVersionUID = 1L;
     private TipoVeiculo tipo;
     private String marca;
     private String modelo;

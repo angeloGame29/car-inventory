@@ -16,7 +16,7 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
         Collection<Veiculo> veiculosAchados = this.gravadorVeiculo.recuperaVeiculo();
         for (Veiculo v : veiculosAchados) {
             if (!this.veiculosMap.containsKey(v.getCodigo())) {
-                v.cadastrar(this.veiculosMap); // Cada veículo sabe como se cadastrar
+                v.cadastrar(this.veiculosMap); // Cada veículo sabe como se cadastrar, pois usei o metodo polimorfico nas classes para cadastrar
             }
         }
     }

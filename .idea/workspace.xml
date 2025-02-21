@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="" />
+    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="ADD">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuSistemaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuSistemaVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/dcx/ufpb/angelo/VeiculoTest/MeuSistemaVeiculoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/dcx/ufpb/angelo/VeiculoTest/MeuSistemaVeiculoTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +27,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;angeloGame29&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/angeloGame29/car-inventory.git&quot;,
+    &quot;accountId&quot;: &quot;710603ab-c265-4343-9bac-ac1decd5fe4f&quot;
+  }
+}</component>
   <component name="MavenRunner">
     <option name="jreName" value="22" />
     <option name="skipTests" value="true" />
@@ -39,8 +59,10 @@
     "JUnit.MeuSistemaVeiculoTest.executor": "Run",
     "JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo.executor": "Run",
     "JUnit.MeuSistemaVeiculoTest.testaGravador.executor": "Run",
+    "JUnit.MeuSistemaVeiculoTest.testaSalvarVeiculo.executor": "Run",
     "Maven.car-inventory [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/João Ângelo/Documents/Meus git",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
@@ -58,7 +80,7 @@
       <recent name="br.ufpb.dcx.angelo.SistemaVeiculos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo">
+  <component name="RunManager" selected="JUnit.MeuSistemaVeiculoTest.testaSalvarVeiculo">
     <configuration name="MeuSistemaVeiculoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="car-inventory" />
       <extension name="coverage">
@@ -106,8 +128,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MeuSistemaVeiculoTest.testaSalvarVeiculo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.dcx.ufpb.angelo.VeiculoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.dcx.ufpb.angelo.VeiculoTest" />
+      <option name="MAIN_CLASS_NAME" value="br.dcx.ufpb.angelo.VeiculoTest.MeuSistemaVeiculoTest" />
+      <option name="METHOD_NAME" value="testaSalvarVeiculo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MeuSistemaVeiculoTest.testaSalvarVeiculo" />
         <item itemvalue="JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo" />
         <item itemvalue="JUnit.MeuSistemaVeiculoTest.testaGravador" />
         <item itemvalue="JUnit.MeuSistemaVeiculoTest" />
@@ -123,6 +162,27 @@
       <option name="presentableId" value="Default" />
       <updated>1740080341309</updated>
     </task>
+    <task id="LOCAL-00001" summary="ADD">
+      <option name="closed" value="true" />
+      <created>1740088502522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740088502522</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ADD">
+      <option name="closed" value="true" />
+      <created>1740088580683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740088580683</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD" />
   </component>
 </project>
