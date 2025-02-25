@@ -75,4 +75,11 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
         }
         return cont;
     }
-}
+    public void removeVeiculo (String codigo) throws VeiculoInexistenteException{
+        if (!veiculosMap.containsKey(codigo)) {
+            throw new VeiculoInexistenteException("Não existe nenhum veiculo com este codigo: ["+codigo+"]");
+        }else {
+            veiculosMap.remove(codigo);
+        }
+        }
+    }

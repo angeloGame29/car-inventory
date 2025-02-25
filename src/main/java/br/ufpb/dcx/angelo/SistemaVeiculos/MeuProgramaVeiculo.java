@@ -22,7 +22,7 @@ public class MeuProgramaVeiculo {
                     "Pesquisar Veículos por Marca",
                     "Atualizar Veículo",
                     "Quantidade de Carros no Inventário",
-                    "Salvar Veículos",
+                    "Salvar Veículos","Remover Veiculo",
                     "Sair"
             };
 
@@ -120,6 +120,15 @@ public class MeuProgramaVeiculo {
                         JOptionPane.showMessageDialog(null,"Seus dados foram salvos com sucesso!");
                     }catch (IOException e){
                         JOptionPane.showMessageDialog(null,"Seus dados não foram salvos!");
+                    }
+                    break;
+                case "Remover Veiculo":
+                    String codigoDoVeiculo = JOptionPane.showInputDialog("Digite o codigo do veiculo a ser removido:");
+                    try{
+                        sistema.removeVeiculo(codigoDoVeiculo);
+                        JOptionPane.showMessageDialog(null, "Veiculo do codigo: ["+codigoDoVeiculo+"] removido com sucesso!");
+                    }catch (VeiculoInexistenteException e){
+                        JOptionPane.showMessageDialog(null,e.getMessage());
                     }
                     break;
 

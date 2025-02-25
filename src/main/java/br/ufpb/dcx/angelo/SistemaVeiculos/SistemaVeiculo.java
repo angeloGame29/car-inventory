@@ -14,4 +14,5 @@ public interface SistemaVeiculo {
     public Veiculo pesquisarVeiculo (String codigo) throws VeiculoInexistenteException;
 
     public int quantidadeDeVeiculosEmEstoque ();
+    public void removeVeiculo(String codigo) throws VeiculoInexistenteException;
 }
