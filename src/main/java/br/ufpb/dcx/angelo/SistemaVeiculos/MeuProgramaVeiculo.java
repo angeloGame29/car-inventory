@@ -126,7 +126,7 @@ public class MeuProgramaVeiculo {
                     String codigoDoVeiculo = JOptionPane.showInputDialog("Digite o codigo do veiculo a ser removido:");
                     try{
                         sistema.removeVeiculo(codigoDoVeiculo);
-                        JOptionPane.showMessageDialog(null, "Veiculo do codigo: ["+codigoDoVeiculo+"] removido com sucesso!");
+                        JOptionPane.showMessageDialog(null, "Veiculo do codigo: ["+codigoDoVeiculo+"] Removido com sucesso!");
                     }catch (VeiculoInexistenteException e){
                         JOptionPane.showMessageDialog(null,e.getMessage());
                     }
