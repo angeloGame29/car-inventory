@@ -35,14 +35,27 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
     }
 
     @Override
-    public List<Veiculo> pesquisarVeiculos(String marca, String modelo) {
-        //TODO IMPLEMENTAR
-        return List.of();
+    public List<Veiculo> pesquisarVeiculos(String marca) throws VeiculoInexistenteException {
+        List<Veiculo> veiculosEncontrados = new ArrayList<>();
+            for (Veiculo v : this.veiculosMap.values()) {
+                if (v.getMarca().equalsIgnoreCase(marca)) {
+                veiculosEncontrados.add(v);
+            }
+        }if(veiculosEncontrados.isEmpty()){
+                throw new VeiculoInexistenteException("Não foi cadastrado nenhum veiculo com esta marca: [" + marca + "]");
+        }
+        return veiculosEncontrados;
     }
 
     @Override
-    public void atualizarVeiculo(String codigo, String novoModelo, int novoAno) {
-        //TODO IMPLEMENTAR
+    public void atualizarVeiculo(String codigo, String novoModelo, int novoAno) throws VeiculoInexistenteException {
+        if(!this.veiculosMap.containsKey(codigo)){
+            throw new VeiculoInexistenteException("Não foi cadastrado nenhum veiculo com este codigo: ["+codigo+"]");
+        }else {
+            Veiculo veiculoAAtualizar = this.veiculosMap.get(codigo);
+            veiculoAAtualizar.setModelo(novoModelo);
+            veiculoAAtualizar.setAno(novoAno);
+        }
     }
 
     @Override
@@ -50,13 +63,16 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
         if (this.veiculosMap.containsKey(codigo)) {
             return this.veiculosMap.get(codigo);
         }else{
-            throw new VeiculoInexistenteException("Não existe nenhum veiculo com este: ["+codigo+"] codigo");
+            throw new VeiculoInexistenteException("Não existe nenhum veiculo com este codigo: ["+codigo+"]");
         }
     }
 
     @Override
     public int quantidadeDeVeiculosEmEstoque() {
-        //TODO IMPLEMENTAR
-        return 0;
+        int cont = 0;
+        for (Veiculo v: this.veiculosMap.values()){
+            cont++;
+        }
+        return cont;
     }
 }

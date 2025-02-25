@@ -7,9 +7,9 @@ public interface SistemaVeiculo {
 
     public void cadastrarVeiculo (Veiculo veiculo) throws VeiculoJaExisteException;
 
-    public List<Veiculo> pesquisarVeiculos (String marca, String modelo);
+    public List<Veiculo> pesquisarVeiculos (String marca) throws VeiculoInexistenteException;
 
-    public void atualizarVeiculo (String codigo, String novoModelo, int novoAno);
+    public void atualizarVeiculo (String codigo, String novoModelo, int novoAno) throws VeiculoInexistenteException;
 
     public Veiculo pesquisarVeiculo (String codigo) throws VeiculoInexistenteException;
 

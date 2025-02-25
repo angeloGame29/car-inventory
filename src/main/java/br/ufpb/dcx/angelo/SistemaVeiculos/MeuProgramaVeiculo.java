@@ -2,6 +2,7 @@ package br.ufpb.dcx.angelo.SistemaVeiculos;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.List;
 
 public class MeuProgramaVeiculo {
     public static void main (String [] args){
@@ -18,8 +19,11 @@ public class MeuProgramaVeiculo {
             String opcao = JOptionPane.showInputDialog(null,"Escolha uma dessas opções: "+
                     "\n1 - Cadastrar Veiculo" +
                     "\n2 - Pesquisar por Veiculo" +
-                    "\n3 - Salvar Veiculos" +
-                    "\n4 - Sair","MENU",JOptionPane.QUESTION_MESSAGE);
+                    "\n3 - Pesquisar Veiculos por marca" +
+                    "\n4 - Atualizar Veiculo" +
+                    "\n5 - Quantidade de carros no inventario" +
+                    "\n6 - Salvar Veiculos"+
+                    "\n7 - Sair","MENU",JOptionPane.QUESTION_MESSAGE);
 
             switch (opcao){
                 case "1"://cadastrar o veiculo
@@ -76,11 +80,36 @@ public class MeuProgramaVeiculo {
                     Veiculo veiculoPesquisado = sistema.pesquisarVeiculo(codigo);
                         JOptionPane.showMessageDialog(null,veiculoPesquisado.toString());
                     }catch (VeiculoInexistenteException e){
-                        JOptionPane.showMessageDialog(null, "Veiculo inexitente!","ops",JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null,e.getMessage());                    }
+                    break;
+                case "3"://Pesquisar Veiculos por marca
+                    String marcaVeiculo = JOptionPane.showInputDialog("Digite uma marca de veiculos:");
+                    try{
+                        List<Veiculo> veiculosNaLista = sistema.pesquisarVeiculos(marcaVeiculo);
+                        JOptionPane.showMessageDialog(null, "Veiculos da marca: "+marcaVeiculo+"\n"+veiculosNaLista.toString());
+                    }catch (VeiculoInexistenteException e){
+                        JOptionPane.showMessageDialog(null,e.getMessage());
+                    }
+                    break;
+                case "4"://Atualizar Veiculo
+                    String codigoVeiculo = JOptionPane.showInputDialog("Digite o codigo do veiculo:");
+                    String novoModelo = JOptionPane.showInputDialog("Digite o novo modelo do veiculo:");
+                    int novoAno = Integer.parseInt(JOptionPane.showInputDialog("Digite o novo ano do veiculo:"));
+                    try{
+                        sistema.atualizarVeiculo(codigoVeiculo,novoModelo,novoAno);
+                        Veiculo carroAtualizado = sistema.pesquisarVeiculo(codigoVeiculo);
+                        JOptionPane.showMessageDialog(null, "Veiculo:\n"+carroAtualizado.toString()+"\nAtualizado com sucesso!");
+                    }catch (VeiculoInexistenteException e){
+                        JOptionPane.showMessageDialog(null,e.getMessage());
                     }
                     break;
 
-                case "3"://Salvar o veiculos
+                case "5"://quantidade de veiculos em estoque
+                    int quantidade = sistema.quantidadeDeVeiculosEmEstoque();
+                    JOptionPane.showMessageDialog(null,"A quantidade de veiculos em estoque é: "+quantidade);
+                    break;
+
+                case "6"://Salvar o veiculos
                     try{
                         sistema.salvarVeiculo();
                         JOptionPane.showMessageDialog(null,"Seus dados foram salvos com sucesso!");
@@ -89,7 +118,7 @@ public class MeuProgramaVeiculo {
                     }
                     break;
 
-                case "4"://sair
+                case "7"://sair
                     Object [] options = {"SIM","VOLTAR"};
                     var escolha = JOptionPane.showOptionDialog(null,"Você deseja mesmo sair?","AVISO!",
                             JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
