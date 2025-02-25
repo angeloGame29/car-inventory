@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="ADD">
+    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="IMPLEMENTAÇÃO DE METODOS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuProgramaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuProgramaVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuSistemaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuSistemaVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/SistemaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/SistemaVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/veiculos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/veiculos.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,11 +200,20 @@
       <option name="project" value="LOCAL" />
       <updated>1740163490516</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="IMPLEMENTAÇÃO DE METODOS">
+      <option name="closed" value="true" />
+      <created>1740524137750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740524137750</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD" />
+    <MESSAGE value="IMPLEMENTAÇÃO DE METODOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="IMPLEMENTAÇÃO DE METODOS" />
   </component>
 </project>

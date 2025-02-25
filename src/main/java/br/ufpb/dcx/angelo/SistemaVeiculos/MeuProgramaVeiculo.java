@@ -16,17 +16,22 @@ public class MeuProgramaVeiculo {
         }
         boolean permanecer = true;
         while (permanecer){
-            String opcao = JOptionPane.showInputDialog(null,"Escolha uma dessas opções: "+
-                    "\n1 - Cadastrar Veiculo" +
-                    "\n2 - Pesquisar por Veiculo" +
-                    "\n3 - Pesquisar Veiculos por marca" +
-                    "\n4 - Atualizar Veiculo" +
-                    "\n5 - Quantidade de carros no inventario" +
-                    "\n6 - Salvar Veiculos"+
-                    "\n7 - Sair","MENU",JOptionPane.QUESTION_MESSAGE);
+            String[] opcoes = {
+                    "Cadastrar Veículo",
+                    "Pesquisar por Veículo",
+                    "Pesquisar Veículos por Marca",
+                    "Atualizar Veículo",
+                    "Quantidade de Carros no Inventário",
+                    "Salvar Veículos",
+                    "Sair"
+            };
 
-            switch (opcao){
-                case "1"://cadastrar o veiculo
+            String listaMenu = (String) JOptionPane.showInputDialog(
+                    null, "Escolha uma opção:", "MENU",
+                    JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]
+            );
+            switch (listaMenu){
+                case "Cadastrar Veículo"://cadastrar o veiculo
                     TipoVeiculo tipoVeiculo;
                     Object carroOuMoto [] = {"CARRO", "MOTO"};
                     var opcoesDeTipo = JOptionPane.showOptionDialog(null,"Escolha um tipo de veiculo:","AVISO!", 0,2,null, carroOuMoto, carroOuMoto[0]);
@@ -74,7 +79,7 @@ public class MeuProgramaVeiculo {
                     }
                     break;
 
-                case "2":// pesquisar veiculo
+                case "Pesquisar por Veículo":// pesquisar veiculo
                     String codigo = JOptionPane.showInputDialog("Digite o codigo do veiculo:");
                     try{
                     Veiculo veiculoPesquisado = sistema.pesquisarVeiculo(codigo);
@@ -82,7 +87,7 @@ public class MeuProgramaVeiculo {
                     }catch (VeiculoInexistenteException e){
                         JOptionPane.showMessageDialog(null,e.getMessage());                    }
                     break;
-                case "3"://Pesquisar Veiculos por marca
+                case "Pesquisar Veículos por Marca"://Pesquisar Veiculos por marca
                     String marcaVeiculo = JOptionPane.showInputDialog("Digite uma marca de veiculos:");
                     try{
                         List<Veiculo> veiculosNaLista = sistema.pesquisarVeiculos(marcaVeiculo);
@@ -91,7 +96,7 @@ public class MeuProgramaVeiculo {
                         JOptionPane.showMessageDialog(null,e.getMessage());
                     }
                     break;
-                case "4"://Atualizar Veiculo
+                case "Atualizar Veículo"://Atualizar Veiculo
                     String codigoVeiculo = JOptionPane.showInputDialog("Digite o codigo do veiculo:");
                     String novoModelo = JOptionPane.showInputDialog("Digite o novo modelo do veiculo:");
                     int novoAno = Integer.parseInt(JOptionPane.showInputDialog("Digite o novo ano do veiculo:"));
@@ -104,12 +109,12 @@ public class MeuProgramaVeiculo {
                     }
                     break;
 
-                case "5"://quantidade de veiculos em estoque
+                case "Quantidade de Carros no Inventário"://quantidade de veiculos em estoque
                     int quantidade = sistema.quantidadeDeVeiculosEmEstoque();
                     JOptionPane.showMessageDialog(null,"A quantidade de veiculos em estoque é: "+quantidade);
                     break;
 
-                case "6"://Salvar o veiculos
+                case "Salvar Veículos"://Salvar o veiculos
                     try{
                         sistema.salvarVeiculo();
                         JOptionPane.showMessageDialog(null,"Seus dados foram salvos com sucesso!");
@@ -118,7 +123,7 @@ public class MeuProgramaVeiculo {
                     }
                     break;
 
-                case "7"://sair
+                case "Sair"://sair
                     Object [] options = {"SIM","VOLTAR"};
                     var escolha = JOptionPane.showOptionDialog(null,"Você deseja mesmo sair?","AVISO!",
                             JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
