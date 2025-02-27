@@ -7,8 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class MeuSistemaVeiculoTest {
 
@@ -52,6 +51,35 @@ public class MeuSistemaVeiculoTest {
         }catch (VeiculoJaExisteException | IOException | VeiculoInexistenteException e){
             e.printStackTrace();
             fail("Exceção não esperada!");
+        }
+    }
+
+    @Test
+    public void testaPesquisaVeiculo () throws VeiculoInexistenteException, VeiculoJaExisteException {
+        MeuSistemaVeiculo sistema = new MeuSistemaVeiculo();
+        try {
+            Veiculo c6 = new Carro(TipoVeiculo.CARRO, "toyota", "corolla", 2011, "002", 4, false);
+            sistema.cadastrarVeiculo(c6);
+            Veiculo veiculoPesquisado = sistema.pesquisarVeiculo("002");
+            assertEquals(c6, veiculoPesquisado);
+        }catch (VeiculoInexistenteException | VeiculoJaExisteException e){
+            e.printStackTrace();
+            fail(("Exceção não esperada!"));
+        }
+
+    }
+    @Test
+    public void testaRemoverVeiculo () throws VeiculoJaExisteException, VeiculoInexistenteException{
+        MeuSistemaVeiculo sistema = new MeuSistemaVeiculo();
+        try {
+            Veiculo m3 = new Moto(TipoVeiculo.MOTO, "Yamaha", "Fazer", 2020, "004", true);
+            sistema.cadastrarVeiculo(m3);
+            sistema.removeVeiculo("004");
+            int quantidadeVeiculos = sistema.quantidadeDeVeiculosEmEstoque();
+            assertEquals(0,quantidadeVeiculos);
+        }catch (VeiculoJaExisteException| VeiculoInexistenteException e){
+            e.printStackTrace();
+            fail(("Exceção não esperada!"));
         }
     }
 }
