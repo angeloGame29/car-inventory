@@ -37,6 +37,7 @@ public class MeuProgramaVeiculo {
                     var opcoesDeTipo = JOptionPane.showOptionDialog(null,"Escolha um tipo de veiculo:","AVISO!", 0,2,null, carroOuMoto, carroOuMoto[0]);
                     if(opcoesDeTipo==0) {
                         tipoVeiculo = TipoVeiculo.CARRO;
+                            String estadoCarro = JOptionPane.showInputDialog("Digite o estado do carro (NOVO/USADO):");
                             String marca = JOptionPane.showInputDialog("Digite a marca do carro:");
                             String modelo = JOptionPane.showInputDialog("Digite o modelo:");
                             int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano:"));
@@ -49,7 +50,7 @@ public class MeuProgramaVeiculo {
                             }else{
                                 automatico = false;
                             }
-                            Veiculo carroC = new Carro(tipoVeiculo, marca, modelo, ano, codigo, portas, automatico);
+                            Veiculo carroC = new Carro(tipoVeiculo, estadoCarro, marca, modelo, ano, codigo, portas, automatico);
                         try {
                             sistema.cadastrarVeiculo(carroC);
                             JOptionPane.showMessageDialog(null,"Carro cadastrado com sucesso!");
@@ -58,6 +59,7 @@ public class MeuProgramaVeiculo {
                         }
                     }else if (opcoesDeTipo==1) {
                         tipoVeiculo = TipoVeiculo.MOTO;
+                        String estadoMoto = JOptionPane.showInputDialog("Digite o estado da moto (NOVO/USADO):");
                         String marca = JOptionPane.showInputDialog("Digite a marca da moto:");
                         String modelo = JOptionPane.showInputDialog("Digite o modelo:");
                         int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano:"));
@@ -69,7 +71,7 @@ public class MeuProgramaVeiculo {
                         }else{
                             possuiEmbreagem = false;
                         }
-                        Veiculo moto = new Moto(tipoVeiculo,marca,modelo,ano,codigo,possuiEmbreagem);
+                        Veiculo moto = new Moto(tipoVeiculo,estadoMoto,marca,modelo,ano,codigo,possuiEmbreagem);
                         try{
                             sistema.cadastrarVeiculo(moto);
                             JOptionPane.showMessageDialog(null,"Moto cadastrada com sucesso!");

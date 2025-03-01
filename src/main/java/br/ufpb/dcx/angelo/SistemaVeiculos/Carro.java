@@ -7,14 +7,15 @@ public class Carro extends Veiculo {
     private int portas;
     private boolean automatico;
 
-    public Carro(TipoVeiculo tipo, String marca, String modelo, int ano, String codigo, int portas, boolean automatico) {
-        super(tipo, marca, modelo, ano, codigo);
+    public Carro(TipoVeiculo tipo,String estado, String marca, String modelo, int ano, String codigo, int portas, boolean automatico) {
+        super(tipo,estado, marca, modelo, ano, codigo);
         this.portas = portas;
         this.automatico = automatico;
     }
     public int getPortas(){
         return this.portas;
     }
+
     public boolean getAutomatico(){
         return this.automatico;
     }
@@ -38,6 +39,7 @@ public class Carro extends Veiculo {
                 "-------------------\n" +
                 "Marca: " + super.getMarca() + "\n" +
                 "Modelo: " + super.getModelo() + "\n" +
+                "Estado: " + super.getEstadoVeiculo() + "\n" +
                 "Ano: " + super.getAno() + "\n" +
                 "Código: " + super.getCodigo() + "\n" +
                 "Número de Portas: " + portas + "\n" +

@@ -1,6 +1,6 @@
-package br.ufpb.dcx.angelo.SistemaVeiculos.windows;
+package br.ufpb.dcx.angelo.SistemaVeiculos.gui;
 
-import br.ufpb.dcx.angelo.SistemaVeiculos.windows.wSecundarias.JanelaInterna;
+import br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.JanelaInterna;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,8 +1,8 @@
-package br.ufpb.dcx.angelo.SistemaVeiculos.windows.wSecundarias;
+package br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias;
 
 import br.ufpb.dcx.angelo.SistemaVeiculos.MeuSistemaVeiculo;
 import br.ufpb.dcx.angelo.SistemaVeiculos.SistemaVeiculo;
-import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoAddController;
+import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoCarAddController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,8 +26,14 @@ public class JanelaInterna extends JDialog {
 
         //Gerenciamento:
         JMenu menuGestao = new JMenu("GERENCIAMENRO");
-        JMenuItem itemCadastrarVeiculo = new JMenuItem("Cadastrar veículo");
+        JMenu itemCadastrarVeiculo = new JMenu("Cadastrar veículo");
         menuGestao.add(itemCadastrarVeiculo);
+        //submenu de cadastra<
+        JMenuItem itemCadastrarCarro = new JMenuItem("Cadastrar carro");
+        itemCadastrarVeiculo.add(itemCadastrarCarro);
+        JMenuItem itemCadastrarMoto = new JMenuItem("Cadastrar moto");
+        itemCadastrarVeiculo.add(itemCadastrarMoto);
+        //submenu de cadastra>
         JMenuItem itemSalvar = new JMenuItem("Salvar veículos");
         menuGestao.add(itemSalvar);
         JMenuItem itemSair = new JMenuItem("Fechar programa");
@@ -49,7 +55,7 @@ public class JanelaInterna extends JDialog {
         JMenuItem itemRemover = new JMenuItem("Remover veículo");
         menuSistema.add(itemRemover);
 
-        itemCadastrarVeiculo.addActionListener(new VeiculoAddController(veiculo,this));
+        itemCadastrarCarro.addActionListener(new VeiculoCarAddController(veiculo,this));
         itemSair.addActionListener(e -> dispose());
 
 

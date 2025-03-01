@@ -7,13 +7,15 @@ import java.util.Objects;
 public abstract class Veiculo implements Serializable {
     private static final long serialVersionUID = 1L;
     private TipoVeiculo tipo;
+    private String estadoVeiculo;
     private String marca;
     private String modelo;
     private int ano;
     private String codigo;
 
-    public Veiculo (TipoVeiculo tipo, String marca, String modelo, int ano, String codigo){
+    public Veiculo ( TipoVeiculo tipo, String estado, String marca, String modelo, int ano, String codigo){
         this.tipo = tipo;
+        this.estadoVeiculo = estado;
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
@@ -22,6 +24,10 @@ public abstract class Veiculo implements Serializable {
 
     public TipoVeiculo getTipo() {
         return tipo;
+    }
+
+    public String getEstadoVeiculo() {
+        return estadoVeiculo;
     }
 
     public String getMarca(){
@@ -38,6 +44,14 @@ public abstract class Veiculo implements Serializable {
 
     public String getCodigo() {
         return this.codigo;
+    }
+
+    public void setTipo(TipoVeiculo tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setEstadoVeiculo(String estadoVeiculo) {
+        this.estadoVeiculo = estadoVeiculo;
     }
 
     public void setMarca(String marca) {

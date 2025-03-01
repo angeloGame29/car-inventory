@@ -4,8 +4,8 @@ import java.util.Map;
 
 public class Moto extends Veiculo {
     private boolean possuiEmbreagem;
-    public Moto(TipoVeiculo tipo, String marca, String modelo, int ano, String codigo, boolean possuiEmbreagem) {
-        super(tipo, marca, modelo, ano, codigo);
+    public Moto( TipoVeiculo tipo,String estado, String marca, String modelo, int ano, String codigo, boolean possuiEmbreagem) {
+        super(tipo,estado, marca, modelo, ano, codigo);
         this.possuiEmbreagem = possuiEmbreagem;
     }
 
@@ -34,6 +34,7 @@ public class Moto extends Veiculo {
                 "------------------\n" +
                 "Marca: " + super.getMarca() + "\n" +
                 "Modelo: " + super.getModelo() + "\n" +
+                "Estado: " + super.getEstadoVeiculo() + "\n" +
                 "Ano: " + super.getAno() + "\n" +
                 "Código: " + super.getCodigo() + "\n" +
                 "Possui Embreagem: " + embreagem + "\n";
