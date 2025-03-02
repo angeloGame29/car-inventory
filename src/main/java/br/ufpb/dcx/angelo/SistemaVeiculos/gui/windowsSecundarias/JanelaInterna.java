@@ -2,15 +2,11 @@ package br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias;
 
 import br.ufpb.dcx.angelo.SistemaVeiculos.MeuSistemaVeiculo;
 import br.ufpb.dcx.angelo.SistemaVeiculos.SistemaVeiculo;
-import br.ufpb.dcx.angelo.SistemaVeiculos.controller.ExitController;
-import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoCarAddController;
-import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoMotorcycleaddController;
-import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoSaveController;
+import br.ufpb.dcx.angelo.SistemaVeiculos.controller.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.io.IOException;
 
 public class JanelaInterna extends JDialog {
@@ -140,16 +136,18 @@ public class JanelaInterna extends JDialog {
         itemSair.addActionListener(new ExitController());
 
         //Consulta - Pesquisa
-        //TODO IMPLEMENTAR
+        itemPesquisarVeiculos.addActionListener(new VeiculoSearchVsController(sistema, this));
+        itemPesquisarVeiculo.addActionListener(new VeiculoSearchController(sistema, this));
 
         //Consulta - Quantidade
-        //TODO IMPLEMENTAR
+        itemQuantidade.addActionListener(new VeiculoCountController(sistema,this));
 
         //Sistema - Atualizar
-        //TODO IMPLEMENTAR
+//        itemAtualizar.addActionListener(new VeiculoUpdateController(sistema,this));
 
         //Sistema - Remover
-        //TODO IMPLEMENTAR
+//        botaoRemover.addActionListener(new VeiculoRemoveController(sistema, this));
+//        itemRemover.addActionListener(new VeiculoRemoveController(sistema, this));
 
         //=====================[ ADD A BARRA + JANELA ]=====================
         menuBarra.add(menuGestao);

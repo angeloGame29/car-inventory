@@ -5,11 +5,11 @@ import br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.JanelaInterna;
 import javax.swing.*;
 import java.awt.*;
 
-public class JanelaVeiculos extends JFrame {
+public class JanelaVeiculosGUI extends JFrame {
     JLabel linha1, linha2;
     ImageIcon logoCarInventory = new ImageIcon("imgs/carLogoB.png");
 
-    public JanelaVeiculos(){
+    public JanelaVeiculosGUI(){
         setTitle("Janela Principal");
         setSize(650, 570);
         setLocationRelativeTo(null);
@@ -48,8 +48,8 @@ public class JanelaVeiculos extends JFrame {
 
 
     public static void main(String [] args){
-        JFrame janelaveiculo = new JanelaVeiculos();
-        janelaveiculo.setVisible(true);
-        janelaveiculo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame janelaVeiculo = new JanelaVeiculosGUI();
+        janelaVeiculo.setVisible(true);
+        janelaVeiculo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
