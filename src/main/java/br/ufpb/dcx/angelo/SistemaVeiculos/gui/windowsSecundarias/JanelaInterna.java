@@ -2,6 +2,7 @@ package br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias;
 
 import br.ufpb.dcx.angelo.SistemaVeiculos.MeuSistemaVeiculo;
 import br.ufpb.dcx.angelo.SistemaVeiculos.SistemaVeiculo;
+import br.ufpb.dcx.angelo.SistemaVeiculos.controller.ExitController;
 import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoCarAddController;
 import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoMotorcycleaddController;
 import br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoSaveController;
@@ -31,7 +32,8 @@ public class JanelaInterna extends JDialog {
            e.printStackTrace();
         }
 
-        JDialog dialog = new JDialog(this, "Janela Secundária", true);
+        //=========================[ JANELA SECUNDARIA ]===================================
+        JDialog dialog = new JDialog(this, "", true);
         dialog.setTitle("Menu Car-Inventory");
         dialog.setSize(650,570);
         dialog.setLocationRelativeTo(null);
@@ -40,7 +42,7 @@ public class JanelaInterna extends JDialog {
         dialog.getContentPane().setBackground(Color.decode("#000622"));
         dialog.add(new JLabel());
 
-        //Ações rápidas
+        //=========================[ MENU DE AÇÕES ]===================================
         linha3 = new JLabel("AÇÕES RÁPIDAS:");
         linha3.setBounds(190,50,300,100);
         linha3.setForeground(Color.white);
@@ -89,18 +91,20 @@ public class JanelaInterna extends JDialog {
         //menu barra estilizado
         menuBarra.setBackground(Color.LIGHT_GRAY);
 
+        //=====================[ BARRA DO MENU ]====================================
         //Gerenciamento:
         JMenu menuGestao = new JMenu("GERENCIAMENRO");
+        //submenu cadastrar
         JMenu itemCadastrarVeiculo = new JMenu("Cadastrar veículo");
         menuGestao.add(itemCadastrarVeiculo);
-        //submenu de cadastra<
         JMenuItem itemCadastrarCarro = new JMenuItem("Cadastrar carro");
         itemCadastrarVeiculo.add(itemCadastrarCarro);
         JMenuItem itemCadastrarMoto = new JMenuItem("Cadastrar moto");
         itemCadastrarVeiculo.add(itemCadastrarMoto);
-        //submenu de cadastra>
+        //submenu salvar
         JMenuItem itemSalvar = new JMenuItem("Salvar veículos");
         menuGestao.add(itemSalvar);
+        //submenu fechar programa
         JMenuItem itemSair = new JMenuItem("Fechar programa");
         menuGestao.add(itemSair);
 
@@ -120,17 +124,34 @@ public class JanelaInterna extends JDialog {
         JMenuItem itemRemover = new JMenuItem("Remover veículo");
         menuSistema.add(itemRemover);
 
-        //ações do programa
+        //==========================[ AÇÕES DO PROGRAMA ]=======================================
+        //Gerenciamento - Cadastrar
         itemCadastrarCarro.addActionListener(new VeiculoCarAddController(sistema,this));
-        itemSair.addActionListener(e -> dispose());
         menuCarro.addActionListener(new VeiculoCarAddController(sistema, this));
+        itemCadastrarMoto.addActionListener(new VeiculoMotorcycleaddController(sistema,this));
         menuMoto.addActionListener(new VeiculoMotorcycleaddController(sistema,this));
+
+        //Gerenciamento - Salvar
         botaoSalvar.addActionListener(new VeiculoSaveController(sistema,this));
         itemSalvar.addActionListener(new VeiculoSaveController(sistema,this));
-        botaoFechar.addActionListener(e -> dispose());
+
+        //Gerenciamento - Sair
+        botaoFechar.addActionListener(new ExitController());
+        itemSair.addActionListener(new ExitController());
+
+        //Consulta - Pesquisa
         //TODO IMPLEMENTAR
 
-        //add opções a barra
+        //Consulta - Quantidade
+        //TODO IMPLEMENTAR
+
+        //Sistema - Atualizar
+        //TODO IMPLEMENTAR
+
+        //Sistema - Remover
+        //TODO IMPLEMENTAR
+
+        //=====================[ ADD A BARRA + JANELA ]=====================
         menuBarra.add(menuGestao);
         menuBarra.add(menuConsulta);
         menuBarra.add(menuSistema);

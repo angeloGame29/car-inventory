@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="JDialog add">
-      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgCadastrar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgOff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgRemover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgSalvar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/file-import-solid-240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/save-solid-240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/trash-alt-solid-240.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/SistemaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/SistemaVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/TipoVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/TipoVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/ExitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/veiculos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/veiculos.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,46 +60,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.BotaoDuasOpcoes.executor": "Run",
-    "Application.ExemploDialogAba.executor": "Run",
-    "Application.ExemploJInternalFrame.executor": "Run",
-    "Application.ExemploJInternalFrameComBotao.executor": "Run",
-    "Application.ExemploTabbedPane.executor": "Run",
-    "Application.JanelaInternaExemplo.executor": "Run",
-    "Application.JanelaPrincipal.executor": "Run",
-    "Application.JanelaVeiculos.executor": "Run",
-    "Application.LayeredPaneExample.executor": "Run",
-    "Application.MainFrame.executor": "Run",
-    "Application.MeuProgramaJframeVeiculo.executor": "Run",
-    "Application.MeuProgramaVeiculo.executor": "Run",
-    "Application.SubmenuExample.executor": "Run",
-    "Application.YearSliderTooltipExample.executor": "Run",
-    "Application.br.ufpb.dcx.angelo.SistemaVeiculos.JanelaPrincipal.executor": "Run",
-    "JUnit.MeuSistemaVeiculoTest.executor": "Run",
-    "JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo.executor": "Run",
-    "JUnit.MeuSistemaVeiculoTest.testaGravador.executor": "Run",
-    "JUnit.MeuSistemaVeiculoTest.testaPesquisaVeiculo.executor": "Run",
-    "JUnit.MeuSistemaVeiculoTest.testaRemoverVeiculo.executor": "Run",
-    "JUnit.MeuSistemaVeiculoTest.testaSalvarVeiculo.executor": "Run",
-    "Maven.car-inventory [compile].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/João Ângelo/Documents/car-inventory/imgs",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.BotaoDuasOpcoes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExemploDialogAba.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExemploJInternalFrame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExemploJInternalFrameComBotao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExemploTabbedPane.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JanelaInternaExemplo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JanelaPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JanelaVeiculos.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LayeredPaneExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainFrame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MeuProgramaJframeVeiculo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MeuProgramaVeiculo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SubmenuExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.YearSliderTooltipExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.br.ufpb.dcx.angelo.SistemaVeiculos.JanelaPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MeuSistemaVeiculoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MeuSistemaVeiculoTest.testaCadastroVeiculo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MeuSistemaVeiculoTest.testaGravador.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MeuSistemaVeiculoTest.testaPesquisaVeiculo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MeuSistemaVeiculoTest.testaRemoverVeiculo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MeuSistemaVeiculoTest.testaSalvarVeiculo.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.car-inventory [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/João Ângelo/Documents/car-inventory/imgs&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.ufpb.dcx.angelo.SistemaVeiculos" />
@@ -265,7 +256,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740856513242</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JDialog add">
+      <option name="closed" value="true" />
+      <created>1740895921508</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740895921508</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JDialog add">
+      <option name="closed" value="true" />
+      <created>1740895948308</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740895948308</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

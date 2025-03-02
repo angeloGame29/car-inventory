@@ -21,14 +21,16 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JDialog dialogTwo = new JDialog(this, "Janela Secundária", true);
-        dialogTwo.setTitle("Menu - Cadastrar Veículo");
-        dialogTwo.setSize(650, 570);
-        dialogTwo.setLocationRelativeTo(null);
-        dialogTwo.setResizable(true);
-        dialogTwo.getContentPane().setBackground(Color.decode("#000622"));
+        JDialog dialogAddCar = new JDialog(this, "", true);
+        dialogAddCar.setTitle("Menu - Cadastrar Carro");
+        dialogAddCar.setSize(650, 570);
+        dialogAddCar.setLocationRelativeTo(null);
+        dialogAddCar.setResizable(true);
+        dialogAddCar.getContentPane().setBackground(Color.decode("#000622"));
         //setLayout(new GridLayout(3, 2));
-        dialogTwo.add(new JLabel());
+        //dialogAddCar.add(new JLabel());
+
+        //=====================[ INFORMAÇÕES DO CARRO ]=====================
         //titulo:
         JLabel tituloPagina = new JLabel("Cadastrar Carro");
         tituloPagina.setForeground(Color.decode("#ffffff"));
@@ -148,7 +150,17 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         cadastrarCarro.setFocusable(false);
         cadastrarCarro.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
-        //pegar dados;
+        //imagem
+        ImageIcon imagCarro = new ImageIcon("./imgs/carroAdd.png");
+        //Redimensionando a imagem
+        Image imagemRedimensionada = imagCarro.getImage().getScaledInstance(300, 300,Image.SCALE_SMOOTH);
+        ImageIcon novaImagem = new ImageIcon(imagemRedimensionada);
+        JLabel carroAdd = new JLabel(novaImagem);
+        carroAdd.setBounds(300,125, 300,300);
+        dialogAddCar.add(carroAdd);
+
+
+        //============================[ PEGADOR DE DADOS ]================================
         cadastrarCarro.addActionListener(c -> {
             String estado = "";
             if (opcaoNovo.isSelected()) {
@@ -169,53 +181,55 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
             }
 
             if (marca.isEmpty() || modelo.isEmpty() || codigo.isEmpty() || estado.isEmpty()) {
-                JOptionPane.showMessageDialog(dialogTwo, "Preencha todos os campos obrigatórios!");
+                JOptionPane.showMessageDialog(dialogAddCar, "Preencha todos os campos obrigatórios!");
                 return;
             }
 
+            //============================[ CADASTRAR E TRATAR ]================================
             Carro veiculoCarro = new Carro(TipoVeiculo.CARRO, estado, marca, modelo, ano, codigo, portas, ehAutomatico);
 
             try {
                 veiculo.cadastrarVeiculo(veiculoCarro);
-                JOptionPane.showMessageDialog(dialogTwo, "Carro cadastrado com sucesso!\n" + veiculoCarro.toString());
-                dialogTwo.dispose();
+                JOptionPane.showMessageDialog(dialogAddCar, "Carro cadastrado com sucesso!\n" + veiculoCarro.toString());
+                dialogAddCar.dispose();
             } catch (VeiculoJaExisteException ex) {
-                JOptionPane.showMessageDialog(dialogTwo, ex.getMessage());
+                JOptionPane.showMessageDialog(dialogAddCar, ex.getMessage());
             }
         });
 
+
+        //===========================[ ADD A JANELA ]==========================================================
         //add titulo
-        dialogTwo.add(tituloPagina);
+        dialogAddCar.add(tituloPagina);
         //add tipo
-        dialogTwo.add(opcaoUsado);
-        dialogTwo.add(opcaoNovo);
-        dialogTwo.add(labelTipo);
+        dialogAddCar.add(opcaoUsado);
+        dialogAddCar.add(opcaoNovo);
+        dialogAddCar.add(labelTipo);
         //add marca
-        dialogTwo.add(textMarca);
-        dialogTwo.add(marcaVeiculo);
+        dialogAddCar.add(textMarca);
+        dialogAddCar.add(marcaVeiculo);
         //add modelo
-        dialogTwo.add(textModelo);
-        dialogTwo.add(modeloVeiculo);
+        dialogAddCar.add(textModelo);
+        dialogAddCar.add(modeloVeiculo);
         //add ano
-        dialogTwo.add(labelAno);
-        dialogTwo.add(slideAno);
+        dialogAddCar.add(labelAno);
+        dialogAddCar.add(slideAno);
         //add codigo
-        dialogTwo.add(textCodigo);
-        dialogTwo.add(codigoVeiculo);
+        dialogAddCar.add(textCodigo);
+        dialogAddCar.add(codigoVeiculo);
         //add portas
-        dialogTwo.add(portasVeiculo);
-        dialogTwo.add(spinnerPortas);
+        dialogAddCar.add(portasVeiculo);
+        dialogAddCar.add(spinnerPortas);
         //add automatico
-        dialogTwo.add(opcaoSim);
-        dialogTwo.add(opcaoNao);
-        dialogTwo.add(labelEhautomatico);
+        dialogAddCar.add(opcaoSim);
+        dialogAddCar.add(opcaoNao);
+        dialogAddCar.add(labelEhautomatico);
         //add botão cadastrar
-        dialogTwo.add(cadastrarCarro);
+        dialogAddCar.add(cadastrarCarro);
 
-        dialogTwo.setLayout(null);
-        //dialogTwo.setUndecorated(true);
-        dialogTwo.setVisible(true);
+        dialogAddCar.setLayout(null);
+        //dialogAddCar.setUndecorated(true);
+        dialogAddCar.setVisible(true);
     }
-
 
 }
