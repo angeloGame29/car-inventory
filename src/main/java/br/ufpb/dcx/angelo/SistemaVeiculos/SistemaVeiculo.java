@@ -1,5 +1,6 @@
 package br.ufpb.dcx.angelo.SistemaVeiculos;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
@@ -15,4 +16,6 @@ public interface SistemaVeiculo {
 
     public int quantidadeDeVeiculosEmEstoque ();
     public void removeVeiculo(String codigo) throws VeiculoInexistenteException;
+    public void recuperaVeiculo() throws IOException;
+    public void salvarVeiculo() throws IOException;
 }

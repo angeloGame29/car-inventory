@@ -12,47 +12,48 @@ import java.awt.event.ActionListener;
 
 public class VeiculoCarAddController extends JDialog implements ActionListener {
     private SistemaVeiculo veiculo;
-    private JanelaInterna janelaPrincipal;
+    private JanelaInterna janelaInterna;
 
     public VeiculoCarAddController(SistemaVeiculo veiculo, JanelaInterna janela) {
         this.veiculo = veiculo;
-        this.janelaPrincipal = janela;
+        this.janelaInterna = janela;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JDialog dialog = new JDialog(this, "Janela Secundária", true);
-        dialog.setTitle("Menu - Cadastrar Veículo");
-        dialog.setSize(650, 570);
-        dialog.setLocationRelativeTo(null);
-        dialog.setResizable(true);
-        dialog.getContentPane().setBackground(Color.decode("#000622"));
+        JDialog dialogTwo = new JDialog(this, "Janela Secundária", true);
+        dialogTwo.setTitle("Menu - Cadastrar Veículo");
+        dialogTwo.setSize(650, 570);
+        dialogTwo.setLocationRelativeTo(null);
+        dialogTwo.setResizable(true);
+        dialogTwo.getContentPane().setBackground(Color.decode("#000622"));
         //setLayout(new GridLayout(3, 2));
-        dialog.add(new JLabel());
+        dialogTwo.add(new JLabel());
         //titulo:
         JLabel tituloPagina = new JLabel("Cadastrar Carro");
         tituloPagina.setForeground(Color.decode("#ffffff"));
         tituloPagina.setFont(new Font("Serif",Font.BOLD, 30));
         tituloPagina.setBounds(30, 10, 300,50);
-
-        //Tipo do veiculo
+        //Estado veiculo
         JLabel labelTipo = new JLabel("Selecione o estado do veiculo:");
         labelTipo.setBounds(30, 60, 200, 30);
         labelTipo.setForeground(Color.white);
-        JRadioButton opcaoCarro = new JRadioButton("Novo");
-        opcaoCarro.setBounds(25,80,80,30);
-        opcaoCarro.setBackground(Color.decode("#000622"));
-        opcaoCarro.setForeground(Color.white);
-        opcaoCarro.setFocusable(false);
-        JRadioButton opcaoMoto = new JRadioButton("Usado");
-        opcaoMoto.setBounds(100,80,80,30);
-        opcaoMoto.setBackground(Color.decode("#000622"));
-        opcaoMoto.setForeground(Color.white);
-        opcaoMoto.setFocusable(false);
+        JRadioButton opcaoNovo = new JRadioButton("Novo");
+        opcaoNovo.setBounds(25,80,80,30);
+        opcaoNovo.setBackground(Color.decode("#000622"));
+        opcaoNovo.setForeground(Color.white);
+        opcaoNovo.setFocusable(false);
+        opcaoNovo.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        JRadioButton opcaoUsado = new JRadioButton("Usado");
+        opcaoUsado.setBounds(100,80,80,30);
+        opcaoUsado.setBackground(Color.decode("#000622"));
+        opcaoUsado.setForeground(Color.white);
+        opcaoUsado.setFocusable(false);
+        opcaoUsado.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         //Faz com que tenha apenas uma escolha
         ButtonGroup grupoTipos = new ButtonGroup();
-        grupoTipos.add(opcaoCarro);
-        grupoTipos.add(opcaoMoto);
+        grupoTipos.add(opcaoNovo);
+        grupoTipos.add(opcaoUsado);
 
         //Marca do carro:
         JLabel marcaVeiculo = new JLabel("Digite a marca do veículo:");
@@ -60,13 +61,18 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         marcaVeiculo.setForeground(Color.white);
         JTextField textMarca = new JTextField();
         textMarca.setBounds(30, 140, 250, 30);
-
+        textMarca.setForeground(Color.white);
+        textMarca.setBackground(Color.decode("#5271ff"));
+        textMarca.setBorder(null);
         //Modelo do carro:
         JLabel modeloVeiculo = new JLabel("Digite o modelo do veículo:");
         modeloVeiculo.setBounds(30, 170, 200, 30);
         modeloVeiculo.setForeground(Color.white);
         JTextField textModelo = new JTextField();
         textModelo.setBounds(30, 200, 250, 30);
+        textModelo.setForeground(Color.white);
+        textModelo.setBackground(Color.decode("#5271ff"));
+        textModelo.setBorder(null);
 
         //Ano do carro:
         JSlider slideAno = new JSlider(1900,2100,2000);
@@ -75,10 +81,13 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         slideAno.setPaintTicks(true);
         slideAno.setPaintLabels(true);
         slideAno.setBounds(30,260,250,50);
+        slideAno.setBackground(Color.decode("#5271ff"));
+        slideAno.setForeground(Color.white);
+        slideAno.setCursor(Cursor.getPredefinedCursor(Cursor.MOVE_CURSOR));
         JLabel labelAno = new JLabel("Ano do veículo: 2000");
         labelAno.setBounds(30,230,200,30);
         labelAno.setForeground(Color.white);
-        //usaso para mudança de estado<
+        //usandoo para mudança de ano<
         slideAno.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
@@ -87,7 +96,7 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
                 slideAno.setToolTipText(String.valueOf(anoDoVeiculo));
             }
         });
-        //usaso para mudança de estado>
+        //usandoo para mudança de ano>
 
         //Codigo do Carro:
         JLabel codigoVeiculo = new JLabel("Digite o codigo do veículo:");
@@ -95,6 +104,9 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         codigoVeiculo.setForeground(Color.white);
         JTextField textCodigo = new JTextField();
         textCodigo.setBounds(30, 340, 250, 30);
+        textCodigo.setForeground(Color.white);
+        textCodigo.setBackground(Color.decode("#5271ff"));
+        textCodigo.setBorder(null);
 
         //Portas do carro:
         JLabel portasVeiculo = new JLabel("Selecione o número de portas:");
@@ -103,6 +115,8 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         SpinnerNumberModel numbPortas = new SpinnerNumberModel(2,2,5,1);
         JSpinner spinnerPortas = new JSpinner(numbPortas);
         spinnerPortas.setBounds(30,400,250,20);
+        spinnerPortas.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        spinnerPortas.setForeground(Color.white);
 
         //Automatico:
         JLabel labelEhautomatico = new JLabel("Selecione se o carro é automático:");
@@ -113,15 +127,18 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         opcaoSim.setBackground(Color.decode("#000622"));
         opcaoSim.setForeground(Color.white);
         opcaoSim.setFocusable(false);
+        opcaoSim.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         JRadioButton opcaoNao = new JRadioButton("NÃO");
         opcaoNao.setBounds(100,440,80,30);
         opcaoNao.setBackground(Color.decode("#000622"));
         opcaoNao.setForeground(Color.white);
         opcaoNao.setFocusable(false);
+        opcaoNao.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         //Faz com que tenha apenas uma escolha
         ButtonGroup grupoSimNao = new ButtonGroup();
         grupoSimNao.add(opcaoSim);
         grupoSimNao.add(opcaoNao);
+
         //botão cadastrar
         JButton cadastrarCarro = new JButton("Cadastrar");
         cadastrarCarro.setBounds(77, 480, 150, 25);
@@ -129,39 +146,76 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         cadastrarCarro.setFont(new Font("Arial", Font.BOLD, 14));
         cadastrarCarro.setForeground(Color.white);
         cadastrarCarro.setFocusable(false);
-        //TODO IMPLEMENTAR
-        cadastrarCarro.addActionListener(f-> dispose());
+        cadastrarCarro.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        //pegar dados;
+        cadastrarCarro.addActionListener(c -> {
+            String estado = "";
+            if (opcaoNovo.isSelected()) {
+                estado = "NOVO";
+            } else if (opcaoUsado.isSelected()) {
+                estado = "USADO";
+            }
+            String marca = textMarca.getText().trim();//remover espaço em branco
+            String modelo = textModelo.getText().trim();
+            int ano = slideAno.getValue();
+            String codigo = textCodigo.getText().trim();
+            int portas = (Integer) spinnerPortas.getValue();
+            boolean ehAutomatico;
+            if (opcaoSim.isSelected()) {
+                ehAutomatico = true;
+            } else {
+                ehAutomatico = false;
+            }
+
+            if (marca.isEmpty() || modelo.isEmpty() || codigo.isEmpty() || estado.isEmpty()) {
+                JOptionPane.showMessageDialog(dialogTwo, "Preencha todos os campos obrigatórios!");
+                return;
+            }
+
+            Carro veiculoCarro = new Carro(TipoVeiculo.CARRO, estado, marca, modelo, ano, codigo, portas, ehAutomatico);
+
+            try {
+                veiculo.cadastrarVeiculo(veiculoCarro);
+                JOptionPane.showMessageDialog(dialogTwo, "Carro cadastrado com sucesso!\n" + veiculoCarro.toString());
+                dialogTwo.dispose();
+            } catch (VeiculoJaExisteException ex) {
+                JOptionPane.showMessageDialog(dialogTwo, ex.getMessage());
+            }
+        });
 
         //add titulo
-        dialog.add(tituloPagina);
+        dialogTwo.add(tituloPagina);
         //add tipo
-        dialog.add(opcaoMoto);
-        dialog.add(opcaoCarro);
-        dialog.add(labelTipo);
+        dialogTwo.add(opcaoUsado);
+        dialogTwo.add(opcaoNovo);
+        dialogTwo.add(labelTipo);
         //add marca
-        dialog.add(textMarca);
-        dialog.add(marcaVeiculo);
+        dialogTwo.add(textMarca);
+        dialogTwo.add(marcaVeiculo);
         //add modelo
-        dialog.add(textModelo);
-        dialog.add(modeloVeiculo);
+        dialogTwo.add(textModelo);
+        dialogTwo.add(modeloVeiculo);
         //add ano
-        dialog.add(labelAno);
-        dialog.add(slideAno);
+        dialogTwo.add(labelAno);
+        dialogTwo.add(slideAno);
         //add codigo
-        dialog.add(textCodigo);
-        dialog.add(codigoVeiculo);
+        dialogTwo.add(textCodigo);
+        dialogTwo.add(codigoVeiculo);
         //add portas
-        dialog.add(portasVeiculo);
-        dialog.add(spinnerPortas);
+        dialogTwo.add(portasVeiculo);
+        dialogTwo.add(spinnerPortas);
         //add automatico
-        dialog.add(opcaoSim);
-        dialog.add(opcaoNao);
-        dialog.add(labelEhautomatico);
+        dialogTwo.add(opcaoSim);
+        dialogTwo.add(opcaoNao);
+        dialogTwo.add(labelEhautomatico);
         //add botão cadastrar
-        dialog.add(cadastrarCarro);
+        dialogTwo.add(cadastrarCarro);
 
-        dialog.setLayout(null);
-        //dialog.setUndecorated(true);
-        dialog.setVisible(true);
+        dialogTwo.setLayout(null);
+        //dialogTwo.setUndecorated(true);
+        dialogTwo.setVisible(true);
     }
+
+
 }

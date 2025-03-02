@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="controller add - classes a implementar&#10;windows add">
-      <change afterPath="$PROJECT_DIR$/imgs/carroAdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/file-import-solid-240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/motoAdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/save-solid-240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/trash-alt-solid-240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" afterDir="false" />
+    <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="JDialog add">
+      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgCadastrar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgOff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgRemover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/imgSalvar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuProgramaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuProgramaVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/Veiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoAddController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/windows/JanelaVeiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/JanelaVeiculos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/windows/wSecundarias/JanelaInterna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/file-import-solid-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/save-solid-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/trash-alt-solid-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/SistemaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/SistemaVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/TipoVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/TipoVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/veiculos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/veiculos.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,22 +55,28 @@
   }
 }</component>
   <component name="MavenRunner">
-    <option name="jreName" value="22" />
+    <option name="jreName" value="23" />
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2tJq5V5jMGZ4ura8l0zOlB6uxHX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.BotaoDuasOpcoes.executor": "Run",
+    "Application.ExemploDialogAba.executor": "Run",
     "Application.ExemploJInternalFrame.executor": "Run",
     "Application.ExemploJInternalFrameComBotao.executor": "Run",
+    "Application.ExemploTabbedPane.executor": "Run",
     "Application.JanelaInternaExemplo.executor": "Run",
     "Application.JanelaPrincipal.executor": "Run",
     "Application.JanelaVeiculos.executor": "Run",
@@ -93,7 +99,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/João Ângelo/Documents/car-inventory/imgs",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   },
   "keyToStringList": {
     "GitStage.ChangesTree.GroupingKeys": [
@@ -111,20 +117,20 @@
       <recent name="C:\Users\João Ângelo\Documents\car-inventory\imgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\João Ângelo\Documents\car-inventory\imgs\iconesDialog" />
       <recent name="C:\Users\João Ângelo\Documents\car-inventory\imgs" />
       <recent name="C:\Users\angelo.silva\IdeaProjects\car-inventory\imgs" />
       <recent name="C:\Users\angelo.silva\IdeaProjects\car-inventory\src\main\java\br\ufpb\dcx\angelo\SistemaVeiculos\imgs" />
       <recent name="C:\Users\angelo.silva\IdeaProjects\car-inventory\src\main\java\br\ufpb\dcx\angelo\SistemaVeiculos" />
-      <recent name="C:\Users\angelo.silva\IdeaProjects\car-inventory\src\main\imgs" />
     </key>
   </component>
   <component name="RunManager" selected="Application.JanelaVeiculos">
-    <configuration name="JanelaVeiculos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.JanelaVeiculos" />
+    <configuration name="BotaoDuasOpcoes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.BotaoDuasOpcoes" />
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.*" />
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +138,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LayeredPaneExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.LayeredPaneExample" />
+    <configuration name="ExemploDialogAba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.ExemploDialogAba" />
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExemploTabbedPane" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.ExemploTabbedPane" />
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JanelaVeiculos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.JanelaVeiculos" />
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,39 +190,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubmenuExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.SubmenuExample" />
-      <module name="car-inventory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YearSliderTooltipExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.YearSliderTooltipExample" />
-      <module name="car-inventory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JanelaVeiculos" />
         <item itemvalue="Application.MeuProgramaVeiculo" />
-        <item itemvalue="Application.YearSliderTooltipExample" />
-        <item itemvalue="Application.SubmenuExample" />
-        <item itemvalue="Application.LayeredPaneExample" />
+        <item itemvalue="Application.BotaoDuasOpcoes" />
+        <item itemvalue="Application.ExemploDialogAba" />
+        <item itemvalue="Application.ExemploTabbedPane" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740805079539</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JDialog add">
+      <option name="closed" value="true" />
+      <created>1740856513242</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740856513242</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,9 +280,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ADD" />
     <MESSAGE value="IMPLEMENTAÇÃO DE METODOS" />
     <MESSAGE value="controller add - classes a implementar&#10;windows add" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller add - classes a implementar&#10;windows add" />
+    <MESSAGE value="JDialog add" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDialog add" />
   </component>
 </project>
