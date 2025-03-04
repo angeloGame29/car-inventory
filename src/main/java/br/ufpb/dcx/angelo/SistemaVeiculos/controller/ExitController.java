@@ -53,5 +53,6 @@ public class ExitController extends JDialog implements ActionListener {
         dialogSair.add(botaoNao);
         dialogSair.setLayout(null);
         dialogSair.setVisible(true);
+
     }
 }
