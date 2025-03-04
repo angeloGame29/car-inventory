@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="Ações add">
-      <change afterPath="$PROJECT_DIR$/imgs/iconesDialog/lupa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculosRecoveredController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/ProgressBarDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/ExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoRemoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchVsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchVsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/JanelaVeiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/JanelaVeiculosGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/veiculos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/veiculos.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +79,8 @@
     "Application.MeuProgramaJframeVeiculo.executor": "Run",
     "Application.MeuProgramaVeiculo.executor": "Run",
     "Application.PesquisaVeiculoGUI.executor": "Run",
+    "Application.ProgressBarDemo.executor": "Debug",
+    "Application.ProgressBarExample.executor": "Run",
     "Application.SubmenuExample.executor": "Run",
     "Application.VeiculoCountController.executor": "Run",
     "Application.YearSliderTooltipExample.executor": "Run",
@@ -96,7 +96,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/João Ângelo/Documents/car-inventory/imgs/iconesDialog",
+    "last_opened_file_path": "C:/Users/João Ângelo/Documents/Code Screenshots",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
@@ -123,20 +123,7 @@
       <recent name="C:\Users\angelo.silva\IdeaProjects\car-inventory\src\main\java\br\ufpb\dcx\angelo\SistemaVeiculos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JanelaVeiculosGUI">
-    <configuration name="BotaoDuasOpcoes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.BotaoDuasOpcoes" />
-      <module name="car-inventory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ProgressBarDemo">
     <configuration name="JanelaVeiculosGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.JanelaVeiculosGUI" />
       <module name="car-inventory" />
@@ -150,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeuProgramaVeiculo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.MeuProgramaVeiculo" />
+    <configuration name="PesquisaVeiculoGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.PesquisaVeiculoGUI" />
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.*" />
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,8 +150,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PesquisaVeiculoGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.PesquisaVeiculoGUI" />
+    <configuration name="ProgressBarDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.ProgressBarDemo" />
+      <module name="car-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProgressBarExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.ProgressBarExample" />
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
@@ -191,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProgressBarDemo" />
         <item itemvalue="Application.JanelaVeiculosGUI" />
+        <item itemvalue="Application.ProgressBarExample" />
         <item itemvalue="Application.PesquisaVeiculoGUI" />
         <item itemvalue="Application.VeiculoCountController" />
-        <item itemvalue="Application.MeuProgramaVeiculo" />
-        <item itemvalue="Application.BotaoDuasOpcoes" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740938993520</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ações add">
+      <option name="closed" value="true" />
+      <created>1740955455456</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740955455456</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

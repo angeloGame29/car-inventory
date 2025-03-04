@@ -41,7 +41,7 @@ public class VeiculoSearchController extends JDialog implements ActionListener {
         JTextArea areaVeiculos = new JTextArea();
         areaVeiculos.setEditable(false);
 
-        //===================[ ESTILIZAÇÕES DOS ELEMENTOS ]=============================
+        //===================[ ESTILIZAÇÃO DOS ELEMENTOS ]=============================
         tituloCount.setBounds(120, 50, 400, 50);
         tituloCount.setFont(new Font("Serif", Font.BOLD, 30));
         tituloCount.setForeground(Color.WHITE);

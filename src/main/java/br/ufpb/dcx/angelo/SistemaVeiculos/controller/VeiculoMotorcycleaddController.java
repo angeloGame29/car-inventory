@@ -11,11 +11,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class VeiculoMotorcycleaddController extends JDialog implements ActionListener {
-    private SistemaVeiculo veiculo;
+    private SistemaVeiculo sistema;
     private JanelaInterna janelaInterna;
 
-    public VeiculoMotorcycleaddController(SistemaVeiculo veiculo, JanelaInterna janela){
-        this.veiculo = veiculo;
+    public VeiculoMotorcycleaddController(SistemaVeiculo sistema, JanelaInterna janela){
+        this.sistema = sistema;
         this.janelaInterna = janela;
     }
 
@@ -177,7 +177,7 @@ public class VeiculoMotorcycleaddController extends JDialog implements ActionLis
             Veiculo veiculoCarro = new Moto(TipoVeiculo.MOTO, estado, marca, modelo, ano, codigo, embreagem);
 
             try {
-                veiculo.cadastrarVeiculo(veiculoCarro);
+                sistema.cadastrarVeiculo(veiculoCarro);
                 JOptionPane.showMessageDialog(dialogAddMoto, "Moto cadastrada com sucesso!\n" + veiculoCarro.toString());
                 dialogAddMoto.dispose();
             } catch (VeiculoJaExisteException ex) {

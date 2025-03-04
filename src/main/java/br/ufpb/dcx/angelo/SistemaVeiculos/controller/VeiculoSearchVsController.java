@@ -50,7 +50,7 @@ public class VeiculoSearchVsController extends JDialog implements ActionListener
         areaVeiculos.setForeground(Color.WHITE);
         areaVeiculos.setFont(new Font("Serif",Font.CENTER_BASELINE,16));
 
-        //===================[ ESTILIZAÇÕES DOS ELEMENTOS ]=============================
+        //===================[ ESTILIZAÇÃO DOS ELEMENTOS ]=============================
         tituloCount.setBounds(120, 50, 400, 50);
         tituloCount.setFont(new Font("Serif", Font.BOLD, 30));
         tituloCount.setForeground(Color.WHITE);
