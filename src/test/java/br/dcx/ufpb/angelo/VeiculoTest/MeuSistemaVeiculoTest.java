@@ -15,7 +15,7 @@ public class MeuSistemaVeiculoTest {
     public void testaCadastroVeiculo() throws VeiculoJaExisteException, IOException {
         MeuSistemaVeiculo sistema = new MeuSistemaVeiculo();
         try{
-            Veiculo veiculo = new Carro(TipoVeiculo.CARRO,"honda","civic",2023,"001",2,true);
+            Veiculo veiculo = new Carro(TipoVeiculo.CARRO,"novo","honda","civic",2023,"001",2,true);
             sistema.cadastrarVeiculo(veiculo);
             Veiculo carro = sistema.pesquisarVeiculo("001");
             assertEquals("civic",carro.getModelo());
@@ -29,10 +29,10 @@ public class MeuSistemaVeiculoTest {
         MeuSistemaVeiculo sistema = new MeuSistemaVeiculo();
 
         try {
-            Veiculo c1 = new Carro(TipoVeiculo.CARRO, "toyota", "corolla", 2011, "002", 4, false);
-            Veiculo c2 = new Carro(TipoVeiculo.CARRO, "honda", "civic v8", 2015, "003", 4, true);
-            Veiculo m1 = new Moto(TipoVeiculo.MOTO,"Yamaha","Fazer",2020,"004",true);
-            Veiculo m2 = new Moto(TipoVeiculo.MOTO,"Honda","Titan",2020,"005",true);
+            Veiculo c1 = new Carro(TipoVeiculo.CARRO, "novo","toyota", "corolla", 2011, "002", 4, false);
+            Veiculo c2 = new Carro(TipoVeiculo.CARRO, "novo","honda", "civic v8", 2015, "003", 4, true);
+            Veiculo m1 = new Moto(TipoVeiculo.MOTO,"novo","Yamaha","Fazer",2020,"004",true);
+            Veiculo m2 = new Moto(TipoVeiculo.MOTO,"novo","Honda","Titan",2020,"005",true);
             sistema.cadastrarVeiculo(c1);
             sistema.cadastrarVeiculo(c2);
             sistema.cadastrarVeiculo(m1);
@@ -58,7 +58,7 @@ public class MeuSistemaVeiculoTest {
     public void testaPesquisaVeiculo () throws VeiculoInexistenteException, VeiculoJaExisteException {
         MeuSistemaVeiculo sistema = new MeuSistemaVeiculo();
         try {
-            Veiculo c6 = new Carro(TipoVeiculo.CARRO, "toyota", "corolla", 2011, "002", 4, false);
+            Veiculo c6 = new Carro(TipoVeiculo.CARRO, "novo","toyota", "corolla", 2011, "002", 4, false);
             sistema.cadastrarVeiculo(c6);
             Veiculo veiculoPesquisado = sistema.pesquisarVeiculo("002");
             assertEquals(c6, veiculoPesquisado);
@@ -72,7 +72,7 @@ public class MeuSistemaVeiculoTest {
     public void testaRemoverVeiculo () throws VeiculoJaExisteException, VeiculoInexistenteException{
         MeuSistemaVeiculo sistema = new MeuSistemaVeiculo();
         try {
-            Veiculo m3 = new Moto(TipoVeiculo.MOTO, "Yamaha", "Fazer", 2020, "004", true);
+            Veiculo m3 = new Moto(TipoVeiculo.MOTO, "novo","Yamaha", "Fazer", 2020, "004", true);
             sistema.cadastrarVeiculo(m3);
             sistema.removeVeiculo("004");
             int quantidadeVeiculos = sistema.quantidadeDeVeiculosEmEstoque();

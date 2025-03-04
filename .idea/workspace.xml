@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment="Ações add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/ProgressBarDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/ExitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoMotorcycleaddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchVsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoSearchVsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +71,7 @@
     "Application.MeuProgramaJframeVeiculo.executor": "Run",
     "Application.MeuProgramaVeiculo.executor": "Run",
     "Application.PesquisaVeiculoGUI.executor": "Run",
-    "Application.ProgressBarDemo.executor": "Debug",
+    "Application.ProgressBarDemo.executor": "Run",
     "Application.ProgressBarExample.executor": "Run",
     "Application.SubmenuExample.executor": "Run",
     "Application.VeiculoCountController.executor": "Run",
@@ -123,7 +115,7 @@
       <recent name="C:\Users\angelo.silva\IdeaProjects\car-inventory\src\main\java\br\ufpb\dcx\angelo\SistemaVeiculos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProgressBarDemo">
+  <component name="RunManager" selected="JUnit.MeuSistemaVeiculoTest">
     <configuration name="JanelaVeiculosGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.JanelaVeiculosGUI" />
       <module name="car-inventory" />
@@ -176,26 +168,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VeiculoCountController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.controller.VeiculoCountController" />
+    <configuration name="MeuSistemaVeiculoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.controller.*" />
+          <option name="PATTERN" value="br.dcx.ufpb.angelo.VeiculoTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="br.dcx.ufpb.angelo.VeiculoTest" />
+      <option name="MAIN_CLASS_NAME" value="br.dcx.ufpb.angelo.VeiculoTest.MeuSistemaVeiculoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProgressBarDemo" />
+        <item itemvalue="JUnit.MeuSistemaVeiculoTest" />
         <item itemvalue="Application.JanelaVeiculosGUI" />
+        <item itemvalue="Application.ProgressBarDemo" />
         <item itemvalue="Application.ProgressBarExample" />
         <item itemvalue="Application.PesquisaVeiculoGUI" />
-        <item itemvalue="Application.VeiculoCountController" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +290,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740955455456</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Ações add">
+      <option name="closed" value="true" />
+      <created>1741066100126</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741066100126</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Ações add">
+      <option name="closed" value="true" />
+      <created>1741066183370</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741066183370</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
