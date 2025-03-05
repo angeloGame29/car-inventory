@@ -43,24 +43,28 @@ public class JanelaInterna extends JDialog {
         linha3.setBounds(190,50,300,100);
         linha3.setForeground(Color.white);
         linha3.setFont(new Font("Serif",Font.BOLD,30));
+
         botaoCadastar = new JButton(imgCadastrar);
         botaoCadastar.setBounds(50,185,150,150);
         botaoCadastar.setBackground(Color.decode("#5271ff"));
         botaoCadastar.setFocusable(false);
         botaoCadastar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         botaoCadastar.setToolTipText("Cadastrar veículo");
+
         botaoSalvar = new JButton(imgSalvar);
         botaoSalvar.setBounds(248,185,150,150);
         botaoSalvar.setBackground(Color.decode("#5271ff"));
         botaoSalvar.setFocusable(false);
         botaoSalvar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         botaoSalvar.setToolTipText("Salvar Dados");
+
         botaoRemover = new JButton(imgRemover);
         botaoRemover.setBounds(440,185,150,150);
         botaoRemover.setBackground(Color.decode("#5271ff"));
         botaoRemover.setFocusable(false);
         botaoRemover.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         botaoRemover.setToolTipText("Remover veículo");
+
         botaoFechar = new JButton(imgFechar);
         botaoFechar.setBounds(285,380,80,80);
         botaoFechar.setBackground(Color.decode("#5271ff"));
@@ -143,11 +147,11 @@ public class JanelaInterna extends JDialog {
         itemQuantidade.addActionListener(new VeiculoCountController(sistema,this));
 
         //Sistema - Atualizar
-//        itemAtualizar.addActionListener(new VeiculoUpdateController(sistema,this));
+        itemAtualizar.addActionListener(new VeiculoUpdateController(sistema,this));
 
         //Sistema - Remover
-//        botaoRemover.addActionListener(new VeiculoRemoveController(sistema, this));
-//        itemRemover.addActionListener(new VeiculoRemoveController(sistema, this));
+        botaoRemover.addActionListener(new VeiculoRemoveController(sistema, this));
+        itemRemover.addActionListener(new VeiculoRemoveController(sistema, this));
 
         //=====================[ ADD A BARRA + JANELA ]=====================
         menuBarra.add(menuGestao);

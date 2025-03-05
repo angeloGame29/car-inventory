@@ -89,7 +89,7 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
         JLabel labelAno = new JLabel("Ano do veículo: 2000");
         labelAno.setBounds(30,230,200,30);
         labelAno.setForeground(Color.white);
-        //usandoo para mudança de ano<
+        //usando para mudança de ano<
         slideAno.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
@@ -98,7 +98,7 @@ public class VeiculoCarAddController extends JDialog implements ActionListener {
                 slideAno.setToolTipText(String.valueOf(anoDoVeiculo));
             }
         });
-        //usandoo para mudança de ano>
+        //usando para mudança de ano>
 
         //Codigo do Carro:
         JLabel codigoVeiculo = new JLabel("Digite o codigo do veículo:");

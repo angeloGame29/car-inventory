@@ -50,7 +50,7 @@ public class MeuSistemaVeiculo implements SistemaVeiculo {
     @Override
     public void atualizarVeiculo(String codigo, String novoModelo, int novoAno) throws VeiculoInexistenteException {
         if(!this.veiculosMap.containsKey(codigo)){
-            throw new VeiculoInexistenteException("Não foi cadastrado nenhum veiculo com este codigo: ["+codigo+"]");
+            throw new VeiculoInexistenteException("Não foi cadastrado nenhum veiculo\n com este codigo: ["+codigo+"]");
         }else {
             Veiculo veiculoAAtualizar = this.veiculosMap.get(codigo);
             veiculoAAtualizar.setModelo(novoModelo);
