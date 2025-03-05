@@ -93,7 +93,7 @@ public class JanelaInterna extends JDialog {
 
         //=====================[ BARRA DO MENU ]====================================
         //Gerenciamento:
-        JMenu menuGestao = new JMenu("GERENCIAMENRO");
+        JMenu menuGestao = new JMenu("GERENCIAMENTO");
         //submenu cadastrar
         JMenu itemCadastrarVeiculo = new JMenu("Cadastrar veículo");
         menuGestao.add(itemCadastrarVeiculo);

@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoCarAddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoRemoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/controller/VeiculoUpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/veiculos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/veiculos.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741131393925</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary=".">
+      <option name="closed" value="true" />
+      <created>1741140236567</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741140236567</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
