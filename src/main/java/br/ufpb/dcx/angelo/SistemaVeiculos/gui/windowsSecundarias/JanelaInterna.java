@@ -89,7 +89,8 @@ public class JanelaInterna extends JDialog {
         //duas opções>
 
         //menu barra estilizado
-        menuBarra.setBackground(Color.LIGHT_GRAY);
+        menuBarra.setBackground(Color.decode("#5271ff"));
+        menuBarra.setForeground(Color.white);
 
         //=====================[ BARRA DO MENU ]====================================
         //Gerenciamento:
