@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="df0a7b42-83b8-4897-860e-7d5495e1482f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/carroAdd.png" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/carroAdd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/motoAdd.png" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/motoAdd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuSistemaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/MeuSistemaVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpb/dcx/angelo/SistemaVeiculos/gui/windowsSecundarias/JanelaInterna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
     "Application.ExemploJInternalFrame.executor": "Run",
     "Application.ExemploJInternalFrameComBotao.executor": "Run",
     "Application.ExemploTabbedPane.executor": "Run",
+    "Application.JWindowExample.executor": "Run",
     "Application.JanelaInternaExemplo.executor": "Run",
     "Application.JanelaPrincipal.executor": "Run",
     "Application.JanelaVeiculos.executor": "Run",
@@ -119,12 +121,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.JanelaVeiculosGUI">
-    <configuration name="JanelaVeiculosGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.JanelaVeiculosGUI" />
+    <configuration name="JWindowExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.JWindowExample" />
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.*" />
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PesquisaVeiculoGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.PesquisaVeiculoGUI" />
+    <configuration name="JanelaVeiculosGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.JanelaVeiculosGUI" />
       <module name="car-inventory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.*" />
+          <option name="PATTERN" value="br.ufpb.dcx.angelo.SistemaVeiculos.gui.windowsSecundarias.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,10 +191,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JanelaVeiculosGUI" />
+        <item itemvalue="Application.JWindowExample" />
         <item itemvalue="JUnit.MeuSistemaVeiculoTest" />
         <item itemvalue="Application.ProgressBarDemo" />
         <item itemvalue="Application.ProgressBarExample" />
-        <item itemvalue="Application.PesquisaVeiculoGUI" />
       </list>
     </recent_temporary>
   </component>

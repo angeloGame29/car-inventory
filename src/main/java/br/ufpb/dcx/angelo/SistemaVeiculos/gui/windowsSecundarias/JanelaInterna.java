@@ -74,10 +74,10 @@ public class JanelaInterna extends JDialog {
 
          //duas opções<
         JPopupMenu popupCarroMoto = new JPopupMenu();
-        JMenuItem menuCarro = new JMenuItem("Cadastrar carro");
-        JMenuItem menuMoto = new JMenuItem("Cadastrar moto");
-        popupCarroMoto.add(menuCarro);
-        popupCarroMoto.add(menuMoto);
+        JMenuItem itemCarro = new JMenuItem("Cadastrar carro");
+        JMenuItem itemMoto = new JMenuItem("Cadastrar moto");
+        popupCarroMoto.add(itemCarro);
+        popupCarroMoto.add(itemMoto);
 
          //mostra o menu ao clicar no botão
         botaoCadastar.addMouseListener(new MouseAdapter() {
@@ -90,7 +90,6 @@ public class JanelaInterna extends JDialog {
 
         //menu barra estilizado
         menuBarra.setBackground(Color.decode("#5271ff"));
-        menuBarra.setForeground(Color.white);
 
         //=====================[ BARRA DO MENU ]====================================
         //Gerenciamento:
@@ -125,12 +124,17 @@ public class JanelaInterna extends JDialog {
         JMenuItem itemRemover = new JMenuItem("Remover veículo");
         menuSistema.add(itemRemover);
 
+        //==========================[ ESTILIZAÇÃO ]=======================================
+        menuGestao.setForeground(Color.WHITE);
+        menuConsulta.setForeground(Color.WHITE);
+        menuSistema.setForeground(Color.WHITE);
+
         //==========================[ AÇÕES DO PROGRAMA ]=======================================
         //Gerenciamento - Cadastrar
         itemCadastrarCarro.addActionListener(new VeiculoCarAddController(sistema,this));
-        menuCarro.addActionListener(new VeiculoCarAddController(sistema, this));
+        itemCarro.addActionListener(new VeiculoCarAddController(sistema, this));
         itemCadastrarMoto.addActionListener(new VeiculoMotorcycleaddController(sistema,this));
-        menuMoto.addActionListener(new VeiculoMotorcycleaddController(sistema,this));
+        itemMoto.addActionListener(new VeiculoMotorcycleaddController(sistema,this));
 
         //Gerenciamento - Salvar
         botaoSalvar.addActionListener(new VeiculoSaveController(sistema,this));
